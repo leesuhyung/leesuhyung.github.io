@@ -1,18 +1,107 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="robots" content="all" />
-  <meta name="robots" content="index,follow"/>
-  <link rel="stylesheet" type="text/css" href="https://qzone.qq.com/gy/404/style/404style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=1024, user-scalable=no">
+<title>404 — File not found</title>
+<style>
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  a.fourohfour {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    text-decoration: none;
+    z-index: 9999;
+  }
+
+  div.noscript_fourohfour {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    margin: auto;
+    line-height: 200px;
+    font-size: 200px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  div.noscript_fourohfour a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #holder_measurement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  #three_canvas_holder {
+    /* 			background-color: #09f; */
+    background-image:url("https://matteovandelli.com/assets/404/404_bluetext_white.png");
+    background-size: 1024px 1024px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: fixed;
+    top: -1024px;
+    left: -1024px;
+    right: -1024px;
+    bottom: -1024px;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /*
+          #three_canvas_holder.mix_blend {
+              background-color: transparent;
+              mix-blend-mode: screen;
+          }
+  */
+
+  #three_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* 			mix-blend-mode: screen; */
+    margin: auto;
+  }
+
+</style>
 </head>
-<body>
-  <script type="text/plain" src="http://www.qq.com/404/search_children.js"
-          charset="utf-8" homePageUrl="/"
-          homePageName="回到我的主页">
-  </script>
-  <script src="https://qzone.qq.com/gy/404/data.js" charset="utf-8"></script>
-  <script src="https://qzone.qq.com/gy/404/page.js" charset="utf-8"></script>
+<body bgcolor="#09f">
+
+<div id="holder_measurement"></div>
+<div id="three_canvas_holder" style="background-image: none;"><canvas width="2192" height="2048" id="three_canvas" style="width: 1096px; height: 1024px; visibility: visible;"></canvas></div>
+
+<a class="fourohfour" href="https://navystyle.github.io"> </a>
+
+<script src="https://matteovandelli.com/_jsapps/backdrop/_libs/three.min.js"></script>
+<script src="https://matteovandelli.com/assets/404/OBJLoader.js"></script>
+<script src="https://matteovandelli.com/assets/404/main.js"></script>
+
+
 </body>
 </html>
